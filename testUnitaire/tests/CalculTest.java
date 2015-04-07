@@ -61,8 +61,8 @@ public class CalculTest {
 		result = this.calcul.division((double)2.5, (double)3.4);
 		assertEquals(0.73529412, result, 0.001);
 		
-		/*result = this.calcul.division((double)2.5, (double)0);
-		assertFalse("impossible de diviser par 0", true);*/
+		result = this.calcul.division((double)2.5, (double)0);
+		assertEquals(0, result, 0.001);
 	}
 
 	@Test
